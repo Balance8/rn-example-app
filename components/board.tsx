@@ -79,6 +79,7 @@ export default function Board() {
   };
 
   const moveToHistory = (idx) => {
+    // Reset Board
     setSquare([...history[idx].square]);
     let newHistory = [...history].slice(0, idx);
     // Change xTurn
